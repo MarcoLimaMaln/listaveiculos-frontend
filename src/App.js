@@ -1,5 +1,5 @@
 import React from 'react';
-import Lista from './ListaCarro';
+import ListaCarro from './ListaCarro';
 
 function App() {
     return <ListaCarro/>

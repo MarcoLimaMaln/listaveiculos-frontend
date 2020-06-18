@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import api from './api';
@@ -13,7 +14,6 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import CreateIcon from '@material-ui/icons/Create';
 import Switch from '@material-ui/core/Switch';
 import {Dialog,DialogActions,TextField,DialogContentText,DialogContent,DialogTitle, MenuItem} from '@material-ui/core';
-
 function ListaCarro(){
 
     const [ carroSistema , setCarroSistema ] = useState([]);
@@ -31,7 +31,7 @@ function ListaCarro(){
         api.get('/').then(response =>  {
 
             const carroSistema = response.data;
-            setcarroSistema(carroSistema);
+            setCarroSistema(carroSistema);
 
         });
         
